@@ -17,8 +17,8 @@ RUN echo 'daemon off;' >> /etc/nginx/nginx.conf
 ADD https://github.com/mrshoki/swagger-ui/archive/v2.1.0-alpha.6.zip /swagger/
 
 WORKDIR /swagger
-RUN unzip master.zip 
-RUN mv swagger-ui-master/dist/* .
+RUN unzip v2.1.0-alpha.6.zip
+RUN mv swagger-ui-2.1.0-alpha.6/dist/* .
 
 EXPOSE 80
 
